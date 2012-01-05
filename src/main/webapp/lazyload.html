@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+<head_merge>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Lift Example</title>
+<!-- 
+ -->
+<script type="text/javascript" src="/static/js/jquery.blockUI.js" ></script>
+<script type="text/javascript" src="/static/js/confirm_dialog.js" ></script>
+
+</head_merge>
+
+<h2>Notice the spinning wheel</h2>
+<div class="lift:LazyLoad">
+  <span class="lift:LongTime"> I started this computation at
+    <span id="start">start</span> and it
+    completed at <span id="end">end</span>.
+  </span>
+</div>
+
+<h2>This one goes first</h2>
+<div class="lift:LazyLoad">
+  <span class="lift:ShortTime"> I started this computation at
+    <span id="start">start</span> and it
+    completed at <span id="end">end</span>.
+  </span>
+</div>
+
+
+</div>
+</body>
+</html>
+

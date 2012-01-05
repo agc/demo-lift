@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+<p>
+  <form class="lift:form.ajax">
+  	<div class="lift:Ajax.ajaxForm" >
+	  	<label>First Name: </label><input type="text" name="first_name"></input><br/>
+	  	<label>Last Name: </label><input name="last_name"></input ><span class="lift:Msg?id=last_name&errorClass=error;"></span><br/>
+	  	<label>Email: </label><input name="email"></input><br/>
+	  	<input type="submit" />
+  	</div>
+  </form>
+</p>
+	<div class="lift:Main.showSubmit">
+		You submitted:<br></br>
+		first name: <span id="firstName"></span><br></br>
+		last name: <span id="lastName"></span><br></br>
+		email: <span id="email"/>
+	</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+<head_merge>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Lift Example</title>
+<!-- 
+ -->
+<script type="text/javascript" src="/static/js/jquery.blockUI.js" ></script>
+<script type="text/javascript" src="/static/js/confirm_dialog.js" ></script>
+
+</head_merge>
+
+<p>
+<span class="lift:helloWorld.howdy"> Welcome to Lift Example at <span id="time">Time goes here</span></span>
+  <form class="lift:Main.form?form=post">
+  	<label>First Name:</label><input type="text" name="first_name"/><br/>
+  	<label>Last Name:</label><input name="last_name"/><span class="lift:Msg?id=last_name&errorClass=error;"></span><br/>
+  	<label>Email:</label><input name="email"/><br/>
+  	<input type="submit" />
+  </form>
+  
+</p>
+	<div class="lift:Main.showSubmit">
+		<b>You submitted:</b><br/>
+		<b>first name:</b> <span id="firstName"></span><br></br>
+		<b>last name:</b> <span id="lastName"></span><br></br>
+		<b>email:</b> <span id="email"/>
+	</div>
+</div>
+</body>
+</html>
+
